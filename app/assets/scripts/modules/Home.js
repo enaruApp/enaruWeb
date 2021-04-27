@@ -15,7 +15,7 @@ export default class Home extends Component {
             </picture>
           </div>
           <div className="large-hero__text-content">
-            <h1 className="large-hero__title">НЭГ ТӨСӨЛ НЭГ ХӨГЖИЛ</h1>
+            <h1 className="large-hero__title">НЭГ ТӨСӨЛ - НЭГ ХӨГЖИЛ</h1>
             <p className="large-hero__description">
               Хамтын эко төсөл хэрэгжүүлэх, үндэсний аж төрөхүйн ухааны онолоор
               хамтын бүтээн байгуулалт хийх
