@@ -1,0 +1,86 @@
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all, 0.3s ease-out;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+  display: flex;
+}
+
+.modal--is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+#signin-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: auto;
+  padding-top: 2rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  border: var(--main-color) solid 0.1rem;
+  border-radius: 10px;
+}
+
+#signin-container .signin__close {
+  position: relative;
+  font-size: 1em;
+  transform: scale(1.3);
+  transform-origin: -370% 400%;
+  color: var(--main-akok);
+  cursor: pointer;
+}
+
+#signin-container .signin__close:hover {
+  color: var(--main-hover);
+}
+
+#signin-container .signin__title {
+  font-weight: 400;
+  color: var(--main-akok);
+  font-size: 1.6rem;
+  margin: 0;
+  text-align: center;
+}
+
+#signin-container .signin__text {
+  font-weight: 400;
+  color: var(--main-akok);
+  font-size: 1.1rem;
+  margin: 0;
+  text-align: left;
+  border: var(--main-color) solid 0.1rem;
+  border-radius: 5px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 10px;
+  margin-top: 1rem;
+}
+
+#signin-container .signin__btn {
+  font-weight: 400;
+  background-color: var(--main-akok);
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: center;
+  border: var(--main-color) solid 0.1rem;
+  border-radius: 5px;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+#signin-container .signin__btn:hover {
+  background: var(--main-hover);
+}

@@ -1,0 +1,37 @@
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  color: #fff;
+  background-color: rgba(132, 30, 178, 0.5);
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: var(--main-hover);
+  border-radius: 5px;
+}
+
+#navbar .top-name {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  font-size: 1rem;
+  margin: 0;
+  padding-top: 1.7rem;
+  padding-left: 3rem;
+}

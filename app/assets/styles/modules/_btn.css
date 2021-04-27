@@ -1,0 +1,17 @@
+.btn {
+  background-color: var(--main-akok);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  text-align: center;
+  display: inline;
+}
+
+.btn--orange {
+  background-color: #d59541;
+}
+
+.btn:hover {
+  background: var(--main-hover);
+}

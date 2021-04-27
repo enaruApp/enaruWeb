@@ -1,0 +1,14 @@
+#video-container {
+  margin-bottom: 30px;
+  border-bottom: 5px solid #841eb2;
+}
+
+#video {
+  display: flex;
+  background: #dbcfe7;
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}

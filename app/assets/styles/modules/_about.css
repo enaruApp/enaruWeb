@@ -1,0 +1,85 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  border-bottom: 5px solid var(--main-akok);
+}
+
+#about .about-text {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+#about .about-text .about-title {
+  font-weight: 300;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+#about .about-text .about-desription {
+  width: 27rem;
+  font-weight: 300;
+  font-size: 1.4rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#about .about-text .group-button .btn {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media only screen and (min-width: 640px) {
+  #about {
+    flex-direction: row;
+  }
+
+  #about .about-img {
+    flex: 1;
+    margin-left: 20px;
+  }
+
+  #about .about-text {
+    flex: 3;
+  }
+
+  #about .about-text .about-title {
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+
+  #about .about-text .about-desription {
+    width: 27rem;
+    font-size: 1.4rem;
+  }
+
+  #about .about-text .group-button .btn {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  #about .about-text .about-desription {
+    width: 33rem;
+  }
+}
+
+@media only screen and (min-width: 1380px) {
+  #about .about-text .about-desription {
+    width: 40rem;
+  }
+}
