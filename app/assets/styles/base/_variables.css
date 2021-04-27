@@ -2,4 +2,8 @@
   --main-color: #490f88;
   --main-akok: #841eb2;
   --main-hover: orange;
+  --screen-tab: 640px;
+  --screen-notebook: 990px;
+  --screen-desktop: 1380px;
+  --screen-wide: 1680px;
 }
