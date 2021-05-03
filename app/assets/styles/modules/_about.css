@@ -21,7 +21,7 @@
 }
 
 #about .about-text .about-desription {
-  width: 27rem;
+  width: 25rem;
   font-weight: 300;
   font-size: 1.4rem;
   padding-left: 10px;
@@ -73,7 +73,7 @@
   }
 }
 
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 640px) {
   #about .about-text .about-desription {
     width: 33rem;
   }

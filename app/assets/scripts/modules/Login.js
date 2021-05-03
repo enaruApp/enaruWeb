@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { restApiUrl } from "./Constants";
 
 export default class Login extends Component {
   state = {
@@ -16,40 +17,41 @@ export default class Login extends Component {
 
   handleClick = () => {
     axios
-      .post("http://localhost:8000/api/v1/users/signin", {
+      .post(`${restApiUrl}/api/v1/users/signin`, {
         phone: this.state.phone,
         password: this.state.password,
       })
       .then((result) => {
-        this.props.onLogin(result.data.token);
+        this.props.onLogin(result.data);
       })
-      .catch((err) =>
-        this.setState({ error: err.response.data.error.message })
-      );
+      .catch((err) => {
+        this.setState({
+          error: err.response.data.error.message,
+        });
+      });
   };
 
   render() {
     return (
-      <div>
-        {this.state.error && <div>{this.state.error}</div>}
-        <div id="signin-container">
-          <div class="signin__close">X</div>
-          <div class="signin__title">Нэвтрэх</div>
+      <div id="login-section">
+        <div class="login-container">
+          {this.state.error && <div>{this.state.error}</div>}
+          <div class="login__title">Нэвтрэх</div>
           <input
-            class="signin__text"
+            class="login__text"
             name="phone"
             type="text"
             placeholder="Утасны дугаар"
             onChange={this.handleType}
           />
           <input
-            class="signin__text"
+            class="login__text"
             name="password"
             type="password"
             placeholder="Нууц үг"
             onChange={this.handleType}
           />
-          <button class="signin__btn" onClick={this.handleClick}>
+          <button class="login__btn" onClick={this.handleClick}>
             Үргэлжлүүлэх
           </button>
         </div>

@@ -1,0 +1,55 @@
+#education {
+  margin-top: 1rem;
+  border-bottom: 5px solid var(--main-akok);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+#education .education-text {
+  flex: 3;
+  color: var(--main-akok);
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#education .education-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#education img {
+  width: 10rem;
+  height: 15rem;
+  padding: 20px;
+}
+
+#education .education-text .education-title {
+  font-weight: 400;
+  font-size: 2.2rem;
+  margin-top: 1rem;
+  padding-left: 30px;
+}
+
+#education .education-text .education-type {
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+#education .education-text .education-description {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media only screen and (min-width: 640px) {
+  #education {
+    flex-direction: row;
+  }
+}

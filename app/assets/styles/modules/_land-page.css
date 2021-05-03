@@ -15,8 +15,13 @@ a {
 }
 
 #footer {
-  color: #fff;
+  color: var(--main-color);
   text-align: center;
-  font-weight: 300;
-  margin-top: 20px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: 30px;
+}
+
+#footer .footer-text {
+  padding-bottom: 10px;
 }

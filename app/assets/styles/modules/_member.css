@@ -1,0 +1,74 @@
+#member {
+  margin-top: 1rem;
+  border-bottom: 5px solid var(--main-akok);
+  display: flex;
+  flex-direction: column;
+}
+
+#member img {
+  width: 100%;
+  height: auto;
+}
+
+.member-title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.2rem;
+  margin-top: 1rem;
+  color: var(--main-akok);
+}
+
+.member-type {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.member-box {
+  display: flex;
+  flex-direction: row;
+  width: 25rem;
+  height: 17rem;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  text-align: center;
+  justify-content: baseline;
+}
+
+#member .member-type .member-box img {
+  width: 10rem;
+  height: 15rem;
+  padding: 5px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+#member .member-type .member-box .member-item {
+  display: flex;
+  flex-direction: column;
+}
+
+#member .member-type .member-box .member-item .member-name {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  color: var(--main-akok);
+}
+
+#member .member-type .member-box .member-item .member-btn {
+  background-color: var(--main-akok);
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+#member .member-type .member-box .member-item .member-btn:hover {
+  background: var(--main-hover);
+}

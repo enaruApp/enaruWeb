@@ -3,15 +3,13 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./modules/NavBar";
 import Home from "./modules/Home";
 import Login from "./modules/Login";
-import Signup from "./modules/Signup";
-import Profile from "./modules/Profile";
 
 export default class App extends Component {
   state = { token: null };
 
-  handleLogin = (token) => {
-    this.setState({ token });
-    alert(token);
+  handleLogin = (data) => {
+    //this.setState({ data.token });
+    alert(data.user.uNameF);
   };
 
   handleLogout = () => {
@@ -30,8 +28,6 @@ export default class App extends Component {
                 path="/login"
                 render={() => <Login onLogin={this.handleLogin} />}
               />
-              <Route path="/signup" component={Signup} />
-              <Route path="/profile" component={Profile} />
             </Switch>
           </div>
         </Router>

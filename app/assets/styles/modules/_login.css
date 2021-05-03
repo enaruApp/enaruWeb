@@ -1,0 +1,61 @@
+#login-section {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -9rem;
+  margin-left: -13rem;
+}
+
+#login-section .login-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 26rem;
+  height: 18rem;
+  border: var(--main-color) solid 0.1rem;
+  border-radius: 10px;
+  align-items: center;
+}
+
+#login-section .login__title {
+  font-weight: 500;
+  color: var(--main-akok);
+  font-size: 1.4rem;
+  margin: 20px;
+  text-align: center;
+}
+
+#login-section .login__text {
+  width: 20rem;
+  font-weight: 400;
+  color: var(--main-akok);
+  font-size: 1.1rem;
+  text-align: left;
+  border: var(--main-color) solid 0.1rem;
+  border-radius: 5px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+#login-section .login__btn {
+  width: 20rem;
+  font-weight: 400;
+  background-color: var(--main-akok);
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: center;
+  border: var(--main-color) solid 0.1rem;
+  border-radius: 5px;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+#login-section .login__btn:hover {
+  background: var(--main-hover);
+}
