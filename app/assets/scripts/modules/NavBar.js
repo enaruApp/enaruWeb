@@ -9,6 +9,12 @@ export default function NavBar({ onLogout }) {
       <div className="site-header__logo">
         <img src="./assets/images/logoAkok.png" alt="enaru logo" />
       </div>
+
+      <div className="header-member">
+        <p className="header-member-hello">{localStorage.getItem("title")}</p>
+        <div>{localStorage.getItem("level")}</div>
+      </div>
+
       <div className="hamburger-area">
         <Hamburger />
         <SideBar />
@@ -32,11 +38,11 @@ export default function NavBar({ onLogout }) {
         <Link className="nav-link" exact to="/login">
           Нэвтрэх
         </Link>
-        {/* 
-        <a className="nav-item" onClick={onLogout}>
-          Гарах
-        </a>
-        */}
+        {
+          <a className="nav-link" onClick={onLogout}>
+            Гарах
+          </a>
+        }
       </nav>
     </div>
   );

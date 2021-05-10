@@ -3,23 +3,37 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./modules/NavBar";
 import Home from "./modules/Home";
 import Login from "./modules/Login";
+import Signup from "./modules/Signup";
 
 export default class App extends Component {
-  state = { token: null };
-
   handleLogin = (data) => {
-    //this.setState({ data.token });
-    alert(data.user.uNameF);
+    localStorage.setItem("token", data.token);
+    localStorage.setItem("title", "Сайн байна уу? " + data.user.uNameL);
+    localStorage.setItem("level", data.user.level);
+    this.router.history.push("/");
+    window.location.reload(true);
+  };
+
+  handleSignup = (data) => {
+    localStorage.setItem("token", data.token);
+    localStorage.setItem("title", "Сайн байна уу? " + data.user.uNameL);
+    localStorage.setItem("level", data.user.level);
+    this.router.history.push("/");
+    window.location.reload(true);
   };
 
   handleLogout = () => {
-    alert("Гарлаа...");
+    localStorage.setItem("token", "");
+    localStorage.setItem("title", "Инару нэгдэл");
+    localStorage.setItem("level", "Гишүүдэд үйлчлэх сайт");
+    this.router.history.push("/");
+    window.location.reload(true);
   };
 
   render() {
     return (
       <div>
-        <Router>
+        <Router ref={(router) => (this.router = router)}>
           <NavBar onLogout={this.handleLogout} />
           <div className="container">
             <Switch>
@@ -27,6 +41,10 @@ export default class App extends Component {
               <Route
                 path="/login"
                 render={() => <Login onLogin={this.handleLogin} />}
+              />
+              <Route
+                path="/signup"
+                render={() => <Signup onSignup={this.handleSignup} />}
               />
             </Switch>
           </div>

@@ -12,6 +12,13 @@
   margin: 5px;
 }
 
+.header-member {
+  position: absolute;
+  color: #fff;
+  margin-left: 4rem;
+  margin-top: 0.5rem;
+}
+
 .primary-nav {
   float: right;
   height: 3.5rem;

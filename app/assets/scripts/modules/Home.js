@@ -63,9 +63,9 @@ export default class Home extends Component {
               <a href="#" class="btn">
                 Дэлгэрэнгүй
               </a>
-              <a href="#" class="btn">
+              <Link className="btn" to="/signup">
                 Бүртгүүлэх
-              </a>
+              </Link>
             </div>
           </div>
         </section>
